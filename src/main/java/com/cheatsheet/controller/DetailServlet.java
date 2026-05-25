@@ -65,5 +65,6 @@ public class DetailServlet extends HttpServlet {
             e.printStackTrace();
             response.sendRedirect("home"); // ID Format အမှားပါက Home စာမျက်နှာသို့ ပြန်မောင်းထုတ်မည်
         }
+        System.out.print(false);
     }
 }
