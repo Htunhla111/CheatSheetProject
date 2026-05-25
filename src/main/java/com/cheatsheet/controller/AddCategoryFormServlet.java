@@ -22,9 +22,14 @@ public class AddCategoryFormServlet extends HttpServlet {
         List<Icon> iconList = iconRepo.getAllIcons();
         
         // ၂။ JSP မှာ သုံးနိုင်အောင် Request ထဲ ထည့်ပေးမယ်
+       // request.setAttribute("icons", iconList);
         request.setAttribute("icons", iconList);
-        
+
         // ၃။ Category ဆောက်တဲ့ JSP စာမျက်နှာဆီကို ပို့ပေးမယ်
         request.getRequestDispatcher("create-category.jsp").forward(request, response);
+        System.out.print("Hello");
+        
     }
+    
+  
 }
